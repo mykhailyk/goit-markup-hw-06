@@ -440,10 +440,12 @@
               <input
                 type="text"
                 class="modal-input"
-                required
                 name="user-phone"
-                
-                }
+                required
+                pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                minlength="13"
+                maxlength="13"
+                title="+380 (00) 000-00-00"
               />
               <svg class="modal-icon" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-phone-modal"></use>
@@ -456,8 +458,9 @@
               <input
                 type="text"
                 class="modal-input"
-                required
                 name="user-email"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 title="example@mail.com"
               />
               <svg class="modal-icon" width="18px" height="18px">
@@ -469,7 +472,7 @@
             <label for="user-comment" class="modal-label">Комментарий</label>
             <textarea
               name="user-comment"
-              id="user-comment"
+              id=""
               class="modal-input modal-input-comment"
               placeholder="Введите текст"
             ></textarea>
