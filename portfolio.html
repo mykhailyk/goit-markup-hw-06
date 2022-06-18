@@ -81,12 +81,13 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-wrap">
-                <img src="./images/portfolio-1.jpg" alt="Наши работы фото 1" width="370" />
-                <p class="portfolio-description">
-                  Ресурс предлагает комплексные предложения с разныcм уровнем функционала и
-                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                  или частном лице.
-                </p></div>
+                  <img src="./images/portfolio-1.jpg" alt="Наши работы фото 1" width="370" />
+                  <p class="portfolio-description">
+                    Ресурс предлагает комплексные предложения с разныcм уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
                 <div class="portfolio-text-wrapper">
                   <h2 class="portfolio-title">Технокряк</h2>
                   <p class="portfolio-text">Веб-сайт</p>
@@ -283,6 +284,27 @@
               ></a>
             </li>
           </ul>
+        </div>
+        <div class="connect-form">
+          <p class="connect-title">Подпишитесь на рассылку</p>
+          <form class="connect-form-wrap">
+            <div class="connect-field">
+              <input
+                type="text"
+                class="connect-form-input"
+                name="user-email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                title="example@mail.com"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="connect-form-btn">
+                Подписаться
+                <svg class="connect-form-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>

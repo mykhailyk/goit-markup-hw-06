@@ -394,20 +394,25 @@
           </ul>
         </div>
         <div class="connect-form">
-          <h3 class="connect-form-title">Подпишитесь на рассылку</h3>
-          <div class="connect-form-field">
-            <div class="connect-form-wrap">
-              <input
-                type="text"
-                class="connect-form-input"
-                name="user-email"
-                required
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                title="example@mail.com"
-                placeholder="E-mail"
-              />
+          <p class="connect-title">Подпишитесь на рассылку</p>
+          <form class="connect-form-wrap">
+            <div class="connect-field">
+            <input
+              type="text"
+              class="connect-form-input"
+              name="user-email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              title="example@mail.com"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="connect-form-btn">
+              Подписаться
+              <svg class="connect-form-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
