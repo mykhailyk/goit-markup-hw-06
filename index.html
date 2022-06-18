@@ -426,7 +426,7 @@
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form>
           <div class="modal-field">
-            <label for="user-name" class="modal-label">Имя</label>
+            <label  class="modal-label">Имя</label>
             <div class="input-wrap">
               <input type="text" class="modal-input" name="user-name" required minlength="2" />
               <svg class="modal-icon" width="18px" height="18px">
@@ -440,6 +440,7 @@
               <input
                 type="text"
                 class="modal-input"
+                id="user-phone"
                 name="user-phone"
                 required
                 pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
@@ -459,6 +460,7 @@
                 type="text"
                 class="modal-input"
                 name="user-email"
+                id="modal-input"
                 required
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 title="example@mail.com"
@@ -472,7 +474,7 @@
             <label for="user-comment" class="modal-label">Комментарий</label>
             <textarea
               name="user-comment"
-              id=""
+              id="user-comment"
               class="modal-input modal-input-comment"
               placeholder="Введите текст"
             ></textarea>
