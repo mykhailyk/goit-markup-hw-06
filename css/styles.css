@@ -596,6 +596,7 @@ img {
   opacity: 1;
   transition: transform var(--default-transition-duration) var(--default-transition-timing-function),
     opacity var(--default-transition-duration) var(--default-transition-timing-function);
+  padding: 40px;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) translateX(-150px);
@@ -631,4 +632,43 @@ img {
 }
 .no-scroll {
   overflow: hidden;
+}
+.modal-title {
+  font-weight: var(--main-font-weight);
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-bottom: 30px;
+}
+.modal-input,
+.modal-input-comment,
+.modal-input-phone {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding-left: 12px;
+}
+.modal-input-comment {
+  padding-left: 16px;
+  padding-top: 12px;
+  height: 120px;
+  resize: none;
+}
+.modal-input::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--second-text-color);
+  display: block;
+  padding-bottom: 4px;
 }
