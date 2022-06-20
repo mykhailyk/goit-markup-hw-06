@@ -718,7 +718,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 .modal-input {
   width: 100%;
@@ -743,7 +743,6 @@ img {
   top: 50%;
   transform: translateY(-50%);
 }
-
 .input-wrap {
   position: relative;
 }
@@ -825,6 +824,7 @@ img {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   text-align: center;
   color: var(--alternative-text-color);
   cursor: pointer;
